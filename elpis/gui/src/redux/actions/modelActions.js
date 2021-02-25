@@ -39,6 +39,39 @@ const modelNewFailure = error => ({
 })
 
 
+/* * * * * * * * * * * *  IMPORT * * * * * * * * * * *  */
+
+export function modelImport(postData) {
+    const url = baseUrl + urls.api.model.import
+    var responseData
+    return async dispatch => {
+        dispatch(modelImportStarted())
+        await axios.post(url, postData)
+            .then( response => {
+                responseData = response.data
+                dispatch(modelImportSuccess(response))
+            })
+            .catch( error => {
+                dispatch(modelImportFailure(error))
+                throw error
+            })
+        return responseData
+    }
+}
+
+const modelImportStarted = () => ({
+    type: actionTypes.MODEL_IMPORT_STARTED
+})
+const modelImportSuccess = response => ({
+    type: actionTypes.MODEL_IMPORT_SUCCESS,
+    response: { ...response }
+})
+const modelImportFailure = error => ({
+    type: actionTypes.MODEL_IMPORT_FAILURE,
+    response: { error }
+})
+
+
 /* * * * * * * * * * * *  LOAD * * * * * * * * * * *  */
 
 export function modelLoad(postData) {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Grid, Header, Segment, Table } from 'semantic-ui-react';
+import { Button, Grid, Header, Divider, Segment, Table } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import { translate } from 'react-i18next';
@@ -142,6 +142,12 @@ class ModelDashboard extends Component {
                                     </Button>
                                 </>
                                 }
+
+                                <Divider />
+
+                                <Button as={Link} to={urls.gui.model.import}>
+                                    {t('model.import.importButtonLabel')}
+                                </Button>
                             </>
                             }
                         </Grid.Column>

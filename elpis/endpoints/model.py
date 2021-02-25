@@ -53,6 +53,18 @@ def new():
     })
 
 
+@bp.route("/import", methods=['POST'])
+def _import():
+    interface = app.config['INTERFACE']
+    data = {
+        "data": "test"
+    }
+    return jsonify({
+        "status": 200,
+        "data": data
+    })
+
+
 @bp.route("/load", methods=['POST'])
 def load():
     interface = app.config['INTERFACE']

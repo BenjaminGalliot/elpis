@@ -20,6 +20,7 @@ export default {
         "model": {
             "index": "/model",
             "new": "/model/new",
+            "import": "/model/import",
             "settings": "/model/settings",
             "train": "/model/train",
             "results": "/model/results",
@@ -62,6 +63,7 @@ export default {
         "model": {
             "new": "/api/model/new",
             "load": "/api/model/load",
+            "import": "/api/model/import",
             "list": "/api/model/list",
             "settings": "/api/model/settings",
             "train": "/api/model/train",

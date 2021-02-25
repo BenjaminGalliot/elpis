@@ -14,6 +14,7 @@ import PronDictL2S from './PronDict/L2S'
 import PronDictLexicon from './PronDict/Lexicon'
 import ModelDashboard from './Model/Dashboard'
 import ModelNew from './Model/New'
+import ModelImport from './Model/Import'
 import ModelSettings from './Model/Settings'
 import ModelTrain from './Model/Train'
 import ModelResults from './Model/Results'
@@ -46,6 +47,7 @@ class App extends Component {
 
                         <Route path={urls.gui.model.index} exact component={ ModelDashboard } />
                         <Route path={urls.gui.model.new} component={ ModelNew } />
+                        <Route path={urls.gui.model.import} component={ ModelImport } />
                         <Route path={urls.gui.model.settings} component={ ModelSettings } />
                         <Route path={urls.gui.model.train} exact component={ ModelTrain } />
                         <Route path={urls.gui.model.results} exact component={ ModelResults } />
