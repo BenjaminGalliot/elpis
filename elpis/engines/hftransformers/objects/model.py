@@ -178,7 +178,8 @@ class HFTransformersModel(BaseModel):
             "fp16": FP16,
             "group_by_length": True,
             "do_train": True,
-            "do_eval": True
+            "do_eval": True,
+            "max_duration_in_seconds": "15"
         }
 
         if DEBUG:
