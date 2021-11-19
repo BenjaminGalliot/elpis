@@ -20,7 +20,7 @@ python elpis/examples/cli/hft/train.py
 from elpis.engines.common.objects.interface import Interface
 from pathlib import Path
 
-RESET = True
+RESET = False
 
 DATASET_DIR = '/datasets/gk'
 DATASET_NAME = 'gk-data'
