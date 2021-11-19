@@ -20,6 +20,7 @@ python elpis/examples/cli/hft/train.py
 from elpis.engines.common.objects.interface import Interface
 from pathlib import Path
 
+RESET = True
 
 DATASET_DIR = '/datasets/gk'
 DATASET_NAME = 'gk-data'
@@ -31,7 +32,11 @@ MODEL_NAME = 'gk-model'
 # Step 0
 # ======
 # Create a Kaldi interface directory (where all the associated files/objects will be stored).
-elpis = Interface(path=Path('/state'), use_existing=True)
+if RESET:
+    elpis = Interface(path=Path('/state'))
+else:
+    elpis = Interface(path=Path('/state'), use_existing=True)
+
 
 
 # Step 1
