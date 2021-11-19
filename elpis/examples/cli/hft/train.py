@@ -23,8 +23,8 @@ from pathlib import Path
 
 DATASET_DIR = '/datasets/gk'
 DATASET_NAME = 'gk-data'
-IMPORTER_METHOD = 'tier_name'
-IMPORTER_VALUE = 'default'
+IMPORTER_METHOD = 'tier_type'
+IMPORTER_VALUE = 'tx'
 MODEL_NAME = 'gk-model'
 
 
