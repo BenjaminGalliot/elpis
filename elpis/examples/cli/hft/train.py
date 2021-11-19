@@ -21,7 +21,7 @@ from elpis.engines.common.objects.interface import Interface
 from pathlib import Path
 
 
-DATASET_DIR = '/datasets/gk/data'
+DATASET_DIR = '/datasets/gk'
 DATASET_NAME = 'gk-data'
 IMPORTER_METHOD = 'tier_name'
 IMPORTER_VALUE = 'default'
