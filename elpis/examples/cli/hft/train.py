@@ -21,11 +21,11 @@ from elpis.engines.common.objects.interface import Interface
 from pathlib import Path
 
 
-DATASET_DIR = '/datasets/timit/training_data'
-DATASET_NAME = 'ds'
+DATASET_DIR = '/datasets/gk/data'
+DATASET_NAME = 'gk-data'
 IMPORTER_METHOD = 'tier_name'
 IMPORTER_VALUE = 'default'
-MODEL_NAME = 'mx'
+MODEL_NAME = 'gk-model'
 
 
 # Step 0
